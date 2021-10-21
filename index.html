@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+       <div class="logo">
+            <div role="button" class="burger-icon">
+                <img width="24px" height="24px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEUAAAD///98fHwwMDDFxcX5+fnAwMA7OzszMzORkZHz8/MnJyfq6upbW1tKSkrX19eioqKKiooWFhZqamrd3d2Dg4O2trZERESwsLDQ0NDj4+NgYGCpqakgICCampoLCwsZGRnK9PiSAAADq0lEQVR4nO2d23aCMBBFo5Zb5GbVopZq//8rS0QrUOyTWbPOyewvOHuhksyMiVmwY6QDeEcN8VFDfNQQHzXERw3xUUN81BAfNcRHDfFRQ3zUEB81xEcN8ZkYRnFWJOkKlTQpstg+N4w+SsNA+RHNG7Zf0tFexqWdMawa6Vgvpammhq10pJfTjg030nk8sB8aMgreFa+GtXQWT9R3w0o6iTeqm+FaOog31r3hWTqHR87O0L5Lx/DIt+0MWX9meurOkGstM6VZmFw6g2dyc5CO4JmD2UtH8MzecGwJn1Mank3hPF/mIh3BM+x+DuYVjePdrKQjeCY1W+kIntka7mVptzA1R+kInjmaSDqCZyKzWEpn8Mqy2z3xVmkclatiFNIpPFJc6zQn6RgeOfW1tkw6hzeye0WYdQdV/ta8LWfFdG0ffYucUXGdD3tPNpHO83ISO+mQsr34l3+73EemfdTqODupQDKo4EYV5icVOnYZ/gKnyHYjpz8TQ5Gt3nCpbDQVCm4mihA1xEcN8VFDfNQQHzXERw3xUUN81BAfNcRHDfEJzzCvDtl+ico+O1T5f4Z53eCP8l3KOn9ieOIZANueZgwjrm7+Jpoa7lLpTC8m3Y0NGafb3oaGsXQaL8QPQ8Yn6DjeDa10Em/YmyF+3/cZRW/I+SXsia+GfKM0DxJnyPwI3UM0i0/pEF75XBjeH9Iea7g/pN3H1HAtuP+SGd6XYU9hGCdLh6zp/5/H/t88B/8z5P8e8v+W8r8P+dc0/OtS/r1FAPtD/j0+9UOMA6m1BVAv5a95s34VB30Lzqc46j0F0D8MoAccQB/fkdcl/pb/n1mMXpJ7noYSNcRHDfFRQ3zUEB81xEcN8VFDfNQQHzXERw3xUUN8Qjuvjf3MPZpzE5v5cxPpz76kO780GhsSnkGbjs6gpT9HmP8saNaLyX7P8+bq4A+5ncnOf64+/jLmOde7Efjvt2B71Y9ZLgK4Z4Zxom3IMYD7nnhGvebZBnDvGvv/89j9HPjDiP9zCeAeUpbq0zPKAO4D5r/Tmf9ebtoSRk/T7Z64F6Z1Z2i/pVN45Nu6KsZZOoZHzn2tjbNa6ljfqom8lZrqXhFm/bGpH32LjXQWL2yGvSdGxf24f9hK53k57bRDuuNa2zTVTB+/5dkqvrcPreGkQkQyqlB+DEdOJvM0UZwVSbpCJU2KLLZjpQBnouhQQ3zUEB81xEcN8VFDfNQQHzXERw3xUUN81BAfNcRHDfFRQ3x+AHaZf2OZLim7AAAAAElFTkSuQmCC" alt=""> 
+            </div>
+            <div class="gmail-logo">
+                <img width="109px" height="40px" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="">
+            </div>
+            </div>
+
+           <div class="header">
+               <div class="search-bar">
+                <button type="submit"><i class="fa fa-search">Search</i></button>
+                <input type="text" placeholder="Search..">
+                <!-- <div class="empty">dfgsdgsdgdgdfgsfg</div> -->
+               </div>
+           </div>
+       <div class="user">
+           <div class="upper-right-buttons">
+               <button class="upper-right-button">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Noun_Project_question_mark_icon_1101884_cc.svg/1200px-Noun_Project_question_mark_icon_1101884_cc.svg.png" alt="">
+               </button>
+               <button class="upper-right-button">
+                        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-gear-512.png" alt="">
+               </button>
+               <button class="upper-right-button">
+                        <img src="https://static.thenounproject.com/png/18968-200.png" alt="">
+               </button>
+               <button class="upper-right-button" id="account">
+                        <div>Username</div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="">
+               </button>
+
+           </div>
+       </div>
+       <div class="right-menu2">
+           <ul>
+               <li><img src="https://www.gstatic.com/companion/icon_assets/keep_2020q4v3_2x.png" alt=""></li>
+               <li><img src="https://www.gstatic.com/companion/icon_assets/calendar_2020q4_2x.png" alt=""></li>
+               <li><img src="https://www.gstatic.com/companion/icon_assets/tasks_2021_2x.png" alt=""></li>
+               <li><img src="https://www.gstatic.com/companion/icon_assets/contacts_2x.png" alt=""></li>
+               <hr><br><br>
+               <li><img src="https://www.gstatic.com/images/icons/material/system/1x/add_grey600_24dp.png" alt=""></li>
+            </ul>
+       </div>
+       <div class="left-menu">
+           
+                <button class="compose-button">
+                    <img src="https://www.gstatic.com/images/icons/material/colored_icons/1x/create_32dp.png" alt="">
+                     <span>Compose</span>   
+                </button>
+            
+
+                <div class="boxes" id="box1">
+                    <img src="https://cdn-icons-png.flaticon.com/512/481/481664.png" alt="">
+                        <span><b>Inbox</b></span>
+                </div>
+                <div class="boxes" id="box1">
+                    <img src="https://www.gstatic.com/images/icons/material/system/1x/send_black_20dp.png" alt="">
+                        <span><b>Sent</b></span>
+                </div>
+                <div class="boxes" id="box1">
+                    <img src="https://www.gstatic.com/images/icons/material/system/1x/insert_drive_file_black_20dp.png" alt="">
+                        <span><b>Drafts</b></span>
+                </div>
+                <div class="boxes" id="box1">
+                    <img src="https://www.gstatic.com/images/icons/material/system/1x/report_black_20dp.png" alt="">
+                        <span><b>Spam</b></span>
+                </div>
+                <div class="boxes" id="box1">
+                    <img src="https://www.gstatic.com/images/icons/material/system/1x/delete_black_20dp.png" alt="">
+                        <span><b>Trash</b></span>
+                </div>
+                <div class="boxes" id="box1">
+                    <img src="https://www.gstatic.com/images/icons/material/system/1x/mail_black_20dp.png" alt="">
+                        <span><b>All Mail</b></span>
+                </div>
+                <div class="boxes" id="box1">
+                    <img src="https://www.gstatic.com/images/icons/material/system_gm_filled/1x/label_gm_grey_24dp.png" alt="">
+                        <span><b>Added for scroll</b></span>
+                </div>
+                <div class="boxes" id="box1">
+                    <img src="https://www.gstatic.com/images/icons/material/system_gm_filled/1x/label_gm_grey_24dp.png" alt="">
+                        <span><b>Added for scroll</b></span>
+                </div>
+                <div class="boxes" id="box1">
+                    <img src="https://www.gstatic.com/images/icons/material/system_gm_filled/1x/label_gm_grey_24dp.png" alt="">
+                        <span><b>Added for scroll</b></span>
+                </div>
+                <div class="boxes" id="box1">
+                    <img src="https://www.gstatic.com/images/icons/material/system_gm_filled/1x/label_gm_grey_24dp.png" alt="">
+                        <span><b>Added for scroll</b></span>
+                </div>
+                
+
+
+                <!-- <li class="inbox-row">fhfghdhfg</li>
+                <li>dfhdfhfgh</li>
+                <li>dfgdfhfg</li>
+                <li>dfghfdhdfh</li>
+                <li>dfghfdhdfh</li>
+                <li>dfghfdhdfh</li>
+                <li>dfghfdhdfh</li>
+                <li>dfghfdhdfh</li>
+                <li>dfghfdhdfh</li>
+                <li>dfghfdhdfh</li>
+                <li>dfghfdhdfh</li>
+                <li>dfghfdhdfh</li>
+                <li>dfghfdhdfh</li>
+                <li>dfghfdhdfh</li> -->
+
+            
+        </div>
+       <div class="main"><ul class="emails">
+           <a class="single-email" href="#">
+                <input type="checkbox">
+                <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+                <div>Random Name</div>
+                <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+                <div>18:29</div>
+           </a>
+           <a class="single-email" href="#">
+            <input type="checkbox">
+            <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+            <div>Random Name</div>
+            <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+            <div>18:29</div>
+       </a>
+       <a class="single-email" href="#">
+        <input type="checkbox">
+        <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+        <div>Random Name</div>
+        <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+        <div>18:29</div>
+   </a>
+   <a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+<a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a><a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a><a class="single-email" href="#">
+    <input type="checkbox">
+    <img src="https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png" alt="">
+    <div>Random Name</div>
+    <div>Random message dfnfnodgignsfgsngjkbgsfbfjbhfbfjgfjgfg</div>
+    <div>18:29</div>
+</a>
+
+           
+
+    </ul></div>
+       <div class="right-menu">
+           <div class="button1">
+               <button>
+                   See all settings
+               </button>
+           </div>
+           <hr>
+           <div class="density">
+                  <span class="d1">Density</span>
+                  
+                <div class="density-rows">
+                    <input type="radio" name="radio">
+                    <span>Default</span>
+                    <img src="https://assets.codepen.io/3677073/internal/screenshots/pens/oNgByPW.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1576692581&width=960" alt="">
+                  
+                </div>
+                <div class="density-rows">
+                    <input type="radio" name="radio">
+                    <span>Comfortable</span>
+                    <img src="https://assets.codepen.io/3677073/internal/screenshots/pens/oNgByPW.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1576692581&width=960" alt="">
+                  
+                </div>
+                <div class="density-rows">
+                    <input type="radio" name="radio">
+                    <span>Compact</span>
+                    <img src="https://assets.codepen.io/3677073/internal/screenshots/pens/oNgByPW.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1576692581&width=960" alt="">
+                  
+                </div>
+           </div>
+           <div class="theme">
+            <span class="d1">Inbox type</span>
+            
+          <div class="density-rows">
+              <input type="radio" name="radio">
+              <span>Default</span>
+              <img src="https://assets.codepen.io/3677073/internal/screenshots/pens/oNgByPW.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1576692581&width=960" alt="">
+            
+          </div>
+          <div class="density-rows">
+            <input type="radio" name="radio">
+            <span>Compact</span>
+            <img src="https://assets.codepen.io/3677073/internal/screenshots/pens/oNgByPW.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1576692581&width=960" alt="">
+          
+        </div>
+        <div class="density-rows">
+            <input type="radio" name="radio">
+            <span>Compact</span>
+            <img src="https://assets.codepen.io/3677073/internal/screenshots/pens/oNgByPW.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1576692581&width=960" alt="">
+          
+        </div>
+        <div class="density-rows">
+            <input type="radio" name="radio">
+            <span>Compact</span>
+            <img src="https://assets.codepen.io/3677073/internal/screenshots/pens/oNgByPW.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1576692581&width=960" alt="">
+          
+        </div>
+        <div class="density-rows">
+            <input type="radio" name="radio">
+            <span>Compact</span>
+            <img src="https://assets.codepen.io/3677073/internal/screenshots/pens/oNgByPW.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1576692581&width=960" alt="">
+          
+        </div>
+        <div class="density-rows">
+            <input type="radio" name="radio">
+            <span>Compact</span>
+            <img src="https://assets.codepen.io/3677073/internal/screenshots/pens/oNgByPW.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1576692581&width=960" alt="">
+          
+        </div>
+        <div class="density-rows">
+            <input type="radio" name="radio">
+            <span>Compact</span>
+            <img src="https://assets.codepen.io/3677073/internal/screenshots/pens/oNgByPW.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1576692581&width=960" alt="">
+          
+        </div>
+          
+     </div>
+          </div>
+       <div class="footer">
+           
+           </div>
+           
+       <div class="footer2">
+           
+           <div class="meet">Meet
+               
+    </div>
+    <div class="meet-row">
+        <img src="https://www.gstatic.com/images/icons/material/system/1x/videocam_black_20dp.png" alt="">
+        <span>New Meeting</span>
+
+    </div>
+
+    <div class="meet-row">
+        <img src="https://www.gstatic.com/images/icons/material/system/1x/keyboard_black_20dp.png" alt="">
+        <span>Join a Meeting</span>
+    </div>
+
+</div>
+
+       <div class="footer1"></div>
+   </div>
+</body>
+</html>

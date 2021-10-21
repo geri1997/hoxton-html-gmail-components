@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+hr{
+    height: 2px;
+}
+img {
+    width: 100%;
+  }
+/* First row */
+.logo{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-area: logo;
+    place-items: center;
+    background-color: rgb(240, 235, 225);
+}
+div .burger-icon{
+    margin-left: 20px;
+    padding: 12px;
+}
+div .gmail-logo{
+    margin-left: -20px;
+}
+div.search-bar button{
+    background-color: #f1f3f4;
+    width: 50px;
+    height: 40px;
+}
+div.header div.search-bar input[type=text] {
+    
+   background-color: #f1f3f4;
+   height: 40px;
+    
+  }
+div.search-bar{
+    align-items: center;
+    /* width: 700px; */
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-columns: 50px minmax(10px, 700px);
+    /* border: 1px solid black;
+    border-radius: 10px; */
+}
+div.upper-right-buttons{
+    display: grid;
+    grid-template-columns: 40px 40px 40px 100px;
+    align-items: center;
+    grid-gap: 10px;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+div.user div.upper-right-buttons button.upper-right-button{
+
+    background-color: rgb(240, 235, 225);
+    border: none;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.upper-right-button img{
+    width: 40px;
+    height: 40px;
+}
+#account{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+}
+#account img{
+   
+}
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: minmax(100px, 700px);
+    align-items: center;
+    /* place-items: center; */
+    background-color: rgb(240, 235, 225);
+}
+/* End of First row */
+
+/* Left menu inboxes */
+.left-menu{
+    grid-area: left-menu;
+    background-color: rgb(240, 235, 225) ;
+    display: grid;
+    
+}
+.left-menu .compose-button{
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 20px;
+    height: 50px;
+    width: 170px;
+    border-radius: 30px;
+    padding: 5px;
+}
+.left-menu .compose-button img{
+    width: 45px;
+}
+.boxes {
+    display: grid;
+    grid-template-columns: 22px auto;
+    align-items: center;
+    padding: 5px;
+    
+}
+.compose-button img{
+    padding-left: 10px;
+}
+.boxes img{
+    margin-left: 30px;
+}
+.boxes span{
+    display: inline-block;
+    margin-left: 60px;
+}
+/* End of left menu inboxes */
+/* Main emails */
+.main{
+    grid-area: main;
+    background-color: rgb(240, 235, 225);
+}
+
+.main .single-email{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid gray;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30px 30px 1fr 2fr 50px;
+}
+.main .single-email img{
+  padding-right: 10px;
+}
+input[type=checkbox]{
+    transform: scale(1.5);
+}
+
+/* End of Main emails */
+
+/* Right Menu */
+.right-menu{
+    grid-area: right-menu;
+    background-color: rgb(240, 235, 225);
+}
+div.right-menu .button1{
+    text-align: center;
+}
+div .right-menu .button1 {
+    display: grid;
+    padding: 12px;
+    /* padding-left: 50px;
+    padding-right: 50px;
+    height: 30px; */
+}
+div .right-menu .button1 button{
+   
+    padding: 12px;
+    color: rgb(88, 88, 223);
+    font-weight: bold;
+    /* padding-left: 50px;
+    padding-right: 50px;
+    height: 30px; */
+}
+
+div.right-menu .density{
+    display: grid;
+    align-items: center;
+    grid-template-rows: 30px 30px 30px 30px;
+    grid-gap:35px;
+}
+.right-menu span.d1{
+    font-weight: bold;
+}
+div.right-menu .density-rows{
+    display: grid;
+    /* margin-top: 50px; */
+    grid-gap: 10px;
+    padding: 15px;
+   
+    grid-template-columns: 15px 1fr 1fr; 
+}
+div.right-menu .density-rows input{
+    align-self: center;
+    height: 20px;
+    width: 20px;
+}
+div.right-menu .density-rows span{
+    align-self: center;
+}
+div .density .density-rows img{
+    width: 80px;
+    height: 50px;
+}
+div.theme{
+    margin-top: 20px;
+}
+
+/* End of right Menu */
+/* Meet */
+.footer2{
+    
+    grid-area: footer2;
+    border-top: 2px solid black;
+    display: grid;
+    grid-template-rows: 1fr 0.7fr 0.7fr;
+    background-color: rgb(240, 235, 225);
+    /* grid-gap: 15px; */
+    
+}
+.meet{
+    padding-top: 30px;
+   padding-left: 37px;
+   font-weight: bold;
+}
+.meet-row{
+    display: grid;
+    grid-template-columns: 22px 1fr;
+    align-items: center;
+}
+.meet-row span{
+    display: inline-block;
+    margin-left: 60px;
+}
+.meet-row img{
+    margin-left: 30px;
+}
+/* End of Meet */
+.footer{
+    grid-area: footer;
+    background-color: rgb(240, 235, 225);
+}
+
+.footer1{
+    grid-area: footer1;
+    background-color: rgb(240, 235, 225);
+}
+.left-menu li{
+    list-style: none;
+    color: white;
+}
+
+.left-menu li{
+    margin: 20px;
+}
+.left-menu, .main, .right-menu{
+    overflow-y: scroll;
+}
+.user{
+    grid-area: user-info;
+    display: grid;
+    background-color: rgb(240, 235, 225);
+}
+.right-menu2{
+    grid-area: right-menu2;
+    background-color: rgb(240, 235, 225);
+}
+.right-menu2 img{
+    padding: 5px;
+    padding-top: 15px;
+}
+.container{
+    display: grid;
+    grid-template: 
+    'logo header user-info user-info' 70px
+    'left-menu main right-menu right-menu2' 350px 
+    'footer2 main right-menu right-menu2' 1fr
+    'footer main right-menu right-menu2' 1fr
+    'footer1 main right-menu right-menu2' 1fr/
+    250px    2fr   250px 50px;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+@media screen and (max-width: 800px){
+    html{
+        overflow-x: hidden;
+    }
+    .container{
+        display: grid;
+        grid-template: 
+        'logo header user-info' 70px
+        'left-menu main right-menu2' 350px 
+        'footer2 main right-menu2' 1fr
+        'footer main right-menu2' 1fr
+        'footer1 main right-menu2' 1fr/
+        250px    2fr   50px ;
+        width: 100vw;
+        height: 100vh;
+    }
+    .user .upper-right-button{
+            display: none;
+    }
+    #account{
+        display: block;
+        padding-right: 10px;
+    }
+    #account div{
+        display: none;
+    }
+    .right-menu{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    html{
+        overflow-x: hidden;
+    }
+    .container{
+        display: grid;
+        grid-template: 
+        'logo header user-info' 70px
+        'left-menu main right-menu2' 250px 
+        'footer2 main right-menu2' 1fr
+        'footer main right-menu2' 1fr
+        'footer1 main right-menu2' 1fr/
+        50px    2fr   50px ;
+        width: 100vw;
+        height: 100vh;
+    }
+    .logo .gmail-logo{
+        display: none;
+    } 
+    .left-menu{
+        display: grid;
+        grid-template-columns: 50px;
+    }
+    .left-menu .compose-button{ 
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        
+        height: 50px;
+        
+        border-radius: 30px;
+        padding: 5px; 
+        margin: 0px;
+        width: 40px;
+        height: 40px;
+        align-items: center;
+    }
+    .left-menu .compose-button img{
+        padding-left: 0px;
+        padding-right: 5px;
+        margin: 0px;
+        width: 30px;
+    } 
+    .footer2 .meet{
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+
+    }
+    .meet-row img{
+        margin: 0;
+        padding: 0;
+        width: 22px;
+        margin-top: 0px;
+    }
+    .footer2 .meet-row span{
+            display: none;
+    }
+    .footer2 .meet-row{
+        display: grid;
+        grid-template-columns: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    .left-menu{
+        overflow-x: hidden;
+    }
+    div.burger-icon{
+        margin: 0px;
+        padding: 12px;
+        padding-top: 25px;
+    }
+    div.boxes span{
+        display: none;
+    }
+    .boxes img{
+        margin: 0px;
+        padding-top: 10px;
+    }
+    div.search-bar {
+        margin-left: 0px;
+    }
+    .compose-button span{
+            display: none;
+    }
+    .logo{
+        padding: 0;
+        margin: 0;
+        display: block;
+    } */
+}
