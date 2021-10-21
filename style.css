@@ -33,17 +33,25 @@ div.header div.search-bar input[type=text] {
     
    background-color: #f1f3f4;
    height: 40px;
+   border-radius: 20px;
+   border-top-left-radius: 0px;
+   border-bottom-left-radius: 0px ;
     
+  }
+  .header .search-bar button{
+        
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
   }
 div.search-bar{
     align-items: center;
     /* width: 700px; */
     display: grid;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
     grid-template-columns: 50px minmax(10px, 700px);
-    /* border: 1px solid black;
-    border-radius: 10px; */
+    /* border: 1px solid black;*/
+    border-radius: 10px; 
 }
 div.upper-right-buttons{
     display: grid;
@@ -70,14 +78,12 @@ div.user div.upper-right-buttons button.upper-right-button{
     display: grid;
     grid-template-columns: 1fr 50px;
 }
-#account img{
-   
-}
 .header{
     grid-area: header;
     display: grid;
-    grid-template-columns: minmax(100px, 700px);
+    /* grid-template-columns: minmax(100px, 700px); */
     align-items: center;
+    justify-items: center;
     /* place-items: center; */
     background-color: rgb(240, 235, 225);
 }
@@ -281,8 +287,28 @@ div.theme{
     height: 100vh;
 }
 
-
-
+@media screen and (max-width: 1100px) {
+    .main .single-email{
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px;
+        border: 1px solid gray;
+        display: grid;
+        align-items: center;
+        
+        grid-template-columns: 30px 30px 120px minmax(100px,2fr) 50px;
+    }
+}
+a.single-email div{
+    overflow-x: hidden;
+}
+@media screen and (max-width: 900px){
+    #message{
+            
+            display: none;
+    }
+}
 @media screen and (max-width: 800px){
     html{
         overflow-x: hidden;
@@ -299,6 +325,13 @@ div.theme{
         width: 100vw;
         height: 100vh;
     }
+    #message{
+            
+        display: inline-block;
+}
+    .header{
+        padding-right: 10px;
+    }
     .user .upper-right-button{
             display: none;
     }
@@ -314,11 +347,21 @@ div.theme{
     }
 }
 
+@media screen and (max-width: 630px){
+    #message{
+            
+            display: none;
+    }
+}
 
 @media screen and (max-width: 600px){
     html{
         overflow-x: hidden;
     }
+    a.single-email div{
+            
+        background-color: rgb(240, 235, 225);
+}
     .container{
         display: grid;
         grid-template: 
@@ -331,12 +374,19 @@ div.theme{
         width: 100vw;
         height: 100vh;
     }
+    #message{
+            
+        display: inline-block;
+}
     .logo .gmail-logo{
         display: none;
     } 
     .left-menu{
         display: grid;
         grid-template-columns: 50px;
+    }
+    a.single-email div:last-child{
+        padding-left: 10px;
     }
     .left-menu .compose-button{ 
         justify-items: center;
@@ -405,5 +455,5 @@ div.theme{
         padding: 0;
         margin: 0;
         display: block;
-    } */
+    }
 }
