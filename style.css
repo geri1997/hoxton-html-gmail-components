@@ -274,8 +274,24 @@ div.theme{
     padding: 5px;
     padding-top: 15px;
 }
+/* div.e-e{
+    background-color: black;
+    height: 100vh;
+    width:100vw;
+    position: absolute;
+}
+div.e-e:hover{
+    background-color: black;
+    width: 20px;
+    z-index: 2;
+
+} */
 .container{
     display: grid;
+    position: absolute;
+    /* bottom: 10px; */
+    z-index: 1;
+    
     grid-template: 
     'logo header user-info user-info' 70px
     'left-menu main right-menu right-menu2' 350px 
@@ -284,7 +300,23 @@ div.theme{
     'footer1 main right-menu right-menu2' 1fr/
     250px    2fr   250px 50px;
     width: 100vw;
+    height: 98vh;
+}
+.hidden-e{
+    position: absolute;
+    background-color: rgb(240, 235, 225);
     height: 100vh;
+    width: 100vw;
+}
+.hidden-e:hover{
+    z-index: 2;
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+    background-image: url("https://i.ibb.co/ZVB2dCt/Untitled-design-1.png")
 }
 
 @media screen and (max-width: 1100px) {
@@ -300,6 +332,9 @@ div.theme{
         grid-template-columns: 30px 30px 120px minmax(100px,2fr) 50px;
     }
 }
+a.single-email div:last-child{
+    padding-left: 10px;
+}
 a.single-email div{
     overflow-x: hidden;
 }
@@ -307,6 +342,9 @@ a.single-email div{
     #message{
             
             display: none;
+    }
+    a.single-email div:last-child{
+        padding-left: 10px;
     }
 }
 @media screen and (max-width: 800px){
@@ -345,6 +383,9 @@ a.single-email div{
     .right-menu{
         display: none;
     }
+    a.single-email div:last-child{
+        padding-left: 10px;
+    }
 }
 
 @media screen and (max-width: 630px){
@@ -352,7 +393,11 @@ a.single-email div{
             
             display: none;
     }
+    a.single-email div:last-child{
+        padding-left: 10px;
+    }
 }
+
 
 @media screen and (max-width: 600px){
     html{
